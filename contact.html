@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Shawarma Reem &mdash; Order &amp; Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/jpeg" href="images/Title_Logo.jpg" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar">
+      <ul>
+        <li>
+          <a href="index.html" class="nav-logo-wrap">
+            <img src="images/Shawerma_Reem.webp" alt="Shawarma Reem Logo" />
+          </a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="contact.html" class="nav-active">Order &amp; Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <p
+        style="
+          font-size: 11px;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          color: #c8960c;
+          margin-bottom: 10px;
+        "
+      >
+        &#9670; Get In Touch &#9670;
+      </p>
+      <h1>Order &amp; Contact</h1>
+      <p>Place a pickup order or send us a message.</p>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="section">
+      <table class="contact-split">
+        <tr>
+          <!-- ORDER FORM -->
+          <td style="padding-right: 40px">
+            <p class="section-label">&#9670; Place Your Order</p>
+            <h2 class="section-heading">Pickup Order Form</h2>
+
+            <form action="#" method="post">
+              <fieldset class="form-fieldset">
+                <legend class="form-legend">Your Details</legend>
+
+                <label class="form-label" for="fname">Full Name *</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="fname"
+                  name="full_name"
+                  maxlength="60"
+                  required="required"
+                />
+
+                <label class="form-label" for="phone">Phone Number *</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  maxlength="15"
+                  required="required"
+                />
+
+                <label class="form-label" for="email">Email Address</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                />
+              </fieldset>
+
+              <br />
+
+              <fieldset class="form-fieldset">
+                <legend class="form-legend">Your Order</legend>
+
+                <label class="form-label">Order Type *</label>
+                <input type="radio" name="order_type" value="pickup" checked />
+                Pickup &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="order_type" value="dine_in" /> Dine-In
+
+                <label class="form-label" for="main_item">Select Item *</label>
+                <select
+                  class="form-select"
+                  id="main_item"
+                  name="main_item"
+                  size="1"
+                >
+                  <option value="">-- Choose an item --</option>
+                  <optgroup label="--- Sandwiches ---">
+                    <option value="reg_chicken">
+                      Regular Chicken Shawarma &mdash; 1.000 JD
+                    </option>
+                    <option value="reg_meat">
+                      Regular Meat Shawarma &mdash; 1.250 JD
+                    </option>
+                    <option value="shrak_chicken">
+                      Double Shrak Chicken &mdash; 1.800 JD
+                    </option>
+                    <option value="shrak_meat">
+                      Double Shrak Meat &mdash; 2.200 JD
+                    </option>
+                    <option value="kaak_chicken">
+                      Double French Ka&apos;ak Chicken &mdash; 1.800 JD
+                    </option>
+                    <option value="kaak_meat">
+                      Double French Ka&apos;ak Meat &mdash; 2.200 JD
+                    </option>
+                  </optgroup>
+                  <optgroup label="--- Meals ---">
+                    <option value="dbl_chicken">
+                      Double Chicken Meal &mdash; 4.050 JD
+                    </option>
+                    <option value="dbl_meat">
+                      Double Meat Meal &mdash; 4.500 JD
+                    </option>
+                    <option value="dbl_mix">
+                      Double Mix Meal &mdash; 4.400 JD
+                    </option>
+                    <option value="tri_chicken">
+                      Triple Chicken Meal &mdash; 5.400 JD
+                    </option>
+                    <option value="tri_meat">
+                      Triple Meat Meal &mdash; 5.700 JD
+                    </option>
+                    <option value="tri_mix">
+                      Triple Mix Meal &mdash; 5.500 JD
+                    </option>
+                  </optgroup>
+                  <optgroup label="--- Sides &amp; Drinks ---">
+                    <option value="fries">French Fries &mdash; 1.000 JD</option>
+                    <option value="water">
+                      Mineral Water &mdash; 0.400 JD
+                    </option>
+                  </optgroup>
+                </select>
+
+                <label class="form-label" for="qty">Quantity *</label>
+                <input
+                  class="form-input"
+                  type="number"
+                  id="qty"
+                  name="quantity"
+                  min="1"
+                  max="30"
+                  value="1"
+                />
+
+                <label class="form-label">Add Sides</label>
+                <input type="checkbox" name="side" value="fries" /> French Fries
+                (1.000 JD) &nbsp;&nbsp;
+                <input type="checkbox" name="side" value="water" /> Mineral
+                Water (0.400 JD)
+
+                <label class="form-label">Spice Level</label>
+                <input type="radio" name="spice" value="mild" checked /> Mild
+                &nbsp;&nbsp;
+                <input type="radio" name="spice" value="medium" /> Medium
+                &nbsp;&nbsp; <input type="radio" name="spice" value="hot" /> Hot
+
+                <label class="form-label" for="notes"
+                  >Special Instructions</label
+                >
+                <textarea
+                  class="form-textarea"
+                  id="notes"
+                  name="notes"
+                  rows="4"
+                  cols="40"
+                >
+E.g. extra garlic sauce, no pickles...</textarea
+                >
+              </fieldset>
+
+              <br />
+              <input
+                class="form-submit"
+                type="submit"
+                value="Place Order &rarr;"
+              />
+              <input class="form-reset" type="reset" value="Clear Form" />
+            </form>
+          </td>
+
+          <!-- CONTACT INFO -->
+          <td style="padding-left: 20px">
+            <p class="section-label">&#9670; Find Us</p>
+            <h2 class="section-heading">Contact &amp; Location</h2>
+
+            <div class="info-box">
+              <h3>&#9670; Location</h3>
+              <p>
+                Shawarma Reem<br />
+                Amman, Jordan
+              </p>
+            </div>
+
+            <div class="info-box">
+              <h3>&#9670; Call Us</h3>
+              <p>
+                Phone: <a href="tel:+96200000000">+962 X XXX XXXX</a
+                ><br /><br />
+                Email:
+                <a href="mailto:info@shawemareem.jo">info@shawemareem.jo</a>
+              </p>
+            </div>
+
+            <div class="info-box">
+              <h3>&#9670; Opening Hours</h3>
+              <table class="hours-table">
+                <tr>
+                  <td>Saturday &ndash; Thursday</td>
+                  <td style="text-align: right; color: #c8960c">
+                    10:00 AM &ndash; 11:00 PM
+                  </td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td style="text-align: right; color: #c8960c">
+                    12:00 PM &ndash; 11:00 PM
+                  </td>
+                </tr>
+                <tr>
+                  <td>Public Holidays</td>
+                  <td style="text-align: right; color: #c9a87c">
+                    <em>Hours may vary</em>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="info-box">
+              <h3>&#9670; Quick Message</h3>
+              <form action="#" method="post">
+                <label class="form-label" style="color: #c9a87c"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  name="msg_name"
+                  style="
+                    width: 85%;
+                    padding: 9px 12px;
+                    border: 1px solid #5a4a30;
+                    background-color: #3d2a18;
+                    font-family: Georgia, serif;
+                    font-size: 14px;
+                    color: #f5e6c8;
+                  "
+                />
+
+                <label
+                  class="form-label"
+                  style="color: #c9a87c; margin-top: 12px"
+                  >Message</label
+                >
+                <textarea
+                  name="message"
+                  rows="3"
+                  cols="30"
+                  style="
+                    width: 85%;
+                    padding: 9px 12px;
+                    border: 1px solid #5a4a30;
+                    background-color: #3d2a18;
+                    font-family: Georgia, serif;
+                    font-size: 14px;
+                    color: #f5e6c8;
+                  "
+                ></textarea>
+
+                <br />
+                <input
+                  class="form-submit"
+                  type="submit"
+                  value="Send &rarr;"
+                  style="margin-top: 14px"
+                />
+              </form>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <img src="images/Shawerma_Reem.webp" alt="Shawarma Reem Logo" /><br />
+      <p>
+        &copy; 2024 Shawarma Reem &nbsp;&#9670;&nbsp;
+        <a href="contact.html">Contact Us</a> &nbsp;&#9670;&nbsp; Amman, Jordan
+      </p>
+    </div>
+  </body>
+</html>
